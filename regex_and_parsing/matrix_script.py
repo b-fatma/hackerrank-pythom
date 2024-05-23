@@ -24,8 +24,5 @@ for _ in range(n):
     matrix.append(matrix_item)
     
 pattern = r"(?<=[a-zA-Z])[^A-Za-z]+(?=[a-zA-Z])"
-result = ''
-
-pattern = r"(?<=[a-zA-Z])[^A-Za-z]+(?=[a-zA-Z])"
 s = ''.join(matrix[i][j] for j in range(m) for i in range(n))
 print(re.sub(pattern, ' ', s))
